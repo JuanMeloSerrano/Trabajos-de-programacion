@@ -1,0 +1,56 @@
+public class parcial {
+    public static void main (String args[]){
+        
+        
+        int N, CC1, CC2, CC3, VPU1, VPU2, VPU3;
+        int TP1, TP2, TP3, VTP;
+        String CDC, NDC, CP1, CP2, CP3, CB;
+        
+        N = Integer.parseInt(JOptionPane.showInputDialog("Cantidad de personas que compraran: "));
+        
+        for (int i = 1; i <= N; i++){
+            NDC = JOptionPane.showInputDialog("Introduzca el nombre del cliente # "+ i + " : "); 
+            CDC = JOptionPane.showInputDialog("Introduzca el numero de cedula de "+ NDC + " : ");
+            
+            JOptionPane.showMessageDialog(null,"Ingrese el código de tres productos.");
+             
+            CP1 = JOptionPane.showInputDialog("Introduzca el código del producto #1 : ");
+            CC1 = Integer.parseInt(JOptionPane.showInputDialog("Ingrese la cantidad comprada del producto #1 : "));
+            VPU1 = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el precio unitario del producto #1 : "));
+             
+            CP2 = JOptionPane.showInputDialog("Introduzca el código del producto #2 : ");
+            CC2 = Integer.parseInt(JOptionPane.showInputDialog("Ingrese la cantidad comprada del producto #2 : "));
+            VPU2 = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el precio unitario del producto #2 : "));
+             
+            CP3 = JOptionPane.showInputDialog("Introduzca el código del producto #3 : ");
+            CC3 = Integer.parseInt(JOptionPane.showInputDialog("Ingrese la cantidad comprada del producto #3 :  "));
+            VPU3 = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el precio unitario del producto #3 : "));
+            
+            CB = JOptionPane.showInputDialog("Ingrese el color de la balota sacada por "+ NDC +". (roja, amarilla o blanca): ");
+            
+            TP1 = CC1 * VPU1;
+            TP2 = CC2 * VPU2;
+            TP3 = CC3 * VPU3;
+            VTP = TP1 + TP2 + TP3;
+
+            switch (CB) {
+                case "roja":
+                    VTP = (int) (VTP * 0.60);
+                    JOptionPane.showMessageDialog(null,"Felicidades! Recibirá un descuento del 40% del total de su compra.");
+                    break;
+                case "amarilla":
+                    VTP = (int) (VTP * 0.75);
+                    JOptionPane.showMessageDialog(null,"Felicidades! Recibirá un descuento del 25% del total de su compra.");
+                    break;
+                case "blanca":
+                    JOptionPane.showMessageDialog(null,"Lo sentimos! En está oportunidad no recibirá descuento en su compra.");
+                    break;
+                default:
+                    JOptionPane.showMessageDialog(null,"ERROR! Color incorrecto o mal escrito.");
+                    break;
+            }       
+            
+            JOptionPane.showMessageDialog(null,"El valor total a pagar por "+ NDC +" es: $"+VTP);
+        }
+    }        
+}

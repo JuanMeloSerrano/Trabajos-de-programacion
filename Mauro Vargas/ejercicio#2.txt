@@ -1,0 +1,17 @@
+import java.util.*;
+public class mauroEje1 {
+    public static void main(String[] args) {
+        long pago = 0;
+        long total = 0;
+        for(int i = 1; i <= 24; i++){
+            if(i == 1){
+                pago = pago + 10000;
+            }else{
+                pago = pago + pago;
+            }
+            System.out.println("José debe pagar en el mes #"+i+" un total: "+ pago);
+            total = total + pago;
+        }
+        System.out.println("El total de lo que pagó Jose en 24 meses es: "+ total);
+    }  
+}

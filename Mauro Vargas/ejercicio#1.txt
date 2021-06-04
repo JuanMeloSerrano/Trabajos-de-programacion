@@ -1,0 +1,36 @@
+import java.util.*;
+public class mauroEje1 {
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner (System.in);
+        int horas;
+        int cont = 0;
+        float valorHora;
+        float sueldo;
+        System.out.println("Ingrese el valor de la hora de trabajo $: ");
+            valorHora = entrada.nextInt();
+      
+        do{
+            sueldo = 0;
+            cont=cont+1;
+            System.out.println("Ingrese (0) para terminar.\n");
+            System.out.println("Ingrese las horas trabajadas durante la semana del empleado #"+cont+": ");
+            horas = entrada.nextInt();
+            
+            if(horas > 0 && horas <45){
+                sueldo = horas * valorHora;
+                System.out.println("El sueldo del empleado #"+cont+" es $"+ sueldo);
+            }
+            else if(horas >= 45 && horas <= 50){
+                sueldo = horas * (valorHora * 2);
+                System.out.println("El sueldo del empleado #"+cont+" es $"+ sueldo);
+            }
+            else if(horas >= 51 && horas <= 60){
+                sueldo = horas * (valorHora * 3);
+                System.out.println("El sueldo del empleado #"+cont+" es $"+ sueldo);
+            }else if(horas > 60){
+                System.out.println("No está permitido!");
+            }
+
+        }while(horas != 0);
+    }
+}

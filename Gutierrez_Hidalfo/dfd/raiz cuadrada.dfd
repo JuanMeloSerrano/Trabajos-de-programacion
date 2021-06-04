@@ -1,0 +1,52 @@
+ Dfd (c)
+1
+1
+1
+0
+0
+6
+2
+3
+num
+1
+0
+6
+result
+1
+0
+4
+1
+55
+'Ingrese un numero para calcualarle la raiz cuadrada: '
+5
+1
+3
+num
+7
+0
+1
+6
+num>=0
+6
+1
+6
+result
+10
+sqrt(-num)
+4
+1
+45
+'La raiz cuadrada de ',num,' es: ',result,'i'
+13
+6
+1
+6
+result
+9
+sqrt(num)
+4
+1
+42
+'La raiz cuadrada de ', num,' es: ',result
+13
+1

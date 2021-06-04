@@ -1,0 +1,56 @@
+ Dfd (c)
+1
+1
+1
+0
+0
+6
+2
+1
+n
+1
+0
+1
+r
+1
+0
+4
+1
+58
+'Programa que calcula la raiz cuadrada de cualquier real.'
+4
+1
+21
+'Ingrese un numero: '
+5
+1
+1
+n
+7
+0
+1
+5
+n> -1
+6
+1
+1
+r
+8
+sqrt(-n)
+4
+1
+28
+'La raiz cuadrad es: ',r,'i'
+13
+6
+1
+1
+r
+7
+sqrt(n)
+4
+1
+25
+'La raiz cuadrada es: ',r
+13
+1
